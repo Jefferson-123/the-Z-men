@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
-import cardService from "../../services/cardService";
+import cardService from "../../../services/cardService";
 
 export default function CardRequestStatus() {
   const user_id = "CURRENT_USER_ID";

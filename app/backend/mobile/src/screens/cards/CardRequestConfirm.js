@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import cardService from "../../services/cardService";
+import cardService from "../../../services/cardService";
 
 export default function CardRequestConfirm({ navigation, route }) {
   const { card_type, card_format, address } = route.params;
