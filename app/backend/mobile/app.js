@@ -1,23 +1,23 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import * as Notifications from 'expo-notifications';
+import BankHubScreen from './src/screens/BankHubScreen';
+import BankListPicker from './src/screens/BankListPicker';
+import ChatScreen from './src/screens/chatScreen';
+import ChatSearch from './src/screens/chatSearch';
+import DepositAmountScreen from './src/screens/DepositAmountScreen';
+import DepositScreen from './src/screens/DepositScreen';
+import LinkBankScreen from './src/screens/LinkBankScreen';
+import RequestCreditScreen from './src/screens/RequestCreditScreen';
+import RequestDebtScreen from './src/screens/RequestDebtScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
-import VerifyOTPScreen from './src/screens/VerifyOTPScreen';
-import WalletScreen from './src/screens/WalletScreens';
 import TopUpScreen from './src/screens/TopUpScreen';
 import TransactionsScreen from './src/screens/TransactionsScreen';
 import TransferScreen from './src/screens/TransferScreen';
-import BankHubScreen from './src/screens/BankHubScreen';
-import BankListPicker from './src/screens/BankListPicker';
-import LinkBankScreen from './src/screens/LinkBankScreen';
-import ChatSearch from './src/screens/chatSearch';
-import ChatScreen from './src/screens/chatScreen';
-import RequestDebtScreen from './src/screens/RequestDebtScreen';
-import RequestCreditScreen from './src/screens/RequestCreditScreen';
+import VerifyOTPScreen from './src/screens/VerifyOTPScreen';
+import WalletScreen from './src/screens/WalletScreens';
 import WithdrawScreen from './src/screens/WithdrawScreen';
-import DepositScreen from './src/screens/DepositScreen';
-import *as Notifications from 'expo-notifications';
-import DepositAmountScreen from './src/screens/DepositAmountScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -39,7 +39,7 @@ export default function App() {
         <Stack.Screen name="Transactions" component={TransactionsScreen} />
         <Stack.Screen name="Transfer" component={TransferScreen} />
         <Stack.Screen name="DepositScreen" component={DepositScreen} />
-        <stack.Screen name="WithdrawConfirmationScreen" component={WithdrawScreen} />
+        <Stack.Screen name="WithdrawConfirmationScreen" component={WithdrawScreen} />
         <Stack.Screen name="DepositAmountScreen" component={DepositAmountScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="VerifyOTP" component={VerifyOTPScreen} />
