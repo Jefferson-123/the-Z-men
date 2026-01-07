@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { supabase } from "../lib/supabase";
+import { supabase } from "../../../../lib/supabase";
 
 export default function AdminCardRequests() {
   const [requests, setRequests] = useState([]);
