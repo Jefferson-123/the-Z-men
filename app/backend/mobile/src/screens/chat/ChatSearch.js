@@ -7,7 +7,7 @@ import {
   StyleSheet,
   FlatList,
 } from "react-native";
-import chatService from "../../services/chatService";
+import chatService from "../../../services/chatService";
 
 export default function ChatSearch({ navigation }) {
   const [search, setSearch] = useState("");

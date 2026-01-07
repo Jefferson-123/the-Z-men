@@ -7,7 +7,7 @@ import {
   StyleSheet,
   FlatList,
 } from "react-native";
-import chatService from "../../services/chatService";
+import chatService from "../../../services/chatService";
 import { supabase } from "../../lib/supabase";
 
 export default function ChatRoom({ route }) {
